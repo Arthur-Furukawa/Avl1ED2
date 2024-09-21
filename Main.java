@@ -9,7 +9,7 @@ https://www.geeksforgeeks.org/program-to-convert-infix-notation-to-expression-tr
 
 Integrantes:
 Arthur Ryuiti Sato Furukawa RA: 10409106
-Felipe Jiao                 RA:
+Felipe Jiao                 RA: 10408852
 */
 
 
