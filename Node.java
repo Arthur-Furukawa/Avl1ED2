@@ -1,3 +1,8 @@
+/*
+Nome: Arthur Ryuiti Sato Furukawa
+RA: 10409106
+*/
+
 package org.example;
 
 public class Node {

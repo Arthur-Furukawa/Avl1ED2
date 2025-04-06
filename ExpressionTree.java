@@ -1,3 +1,7 @@
+/*
+Nome: Arthur Ryuiti Sato Furukawa
+RA: 10409106
+*/
 package org.example;
 
 import java.util.ArrayList;
@@ -109,12 +113,10 @@ public class ExpressionTree {
     private void printInOrder(Node node) {
         if (node != null) {
             if (isOperator(node.getValue()))
-                System.out.print("(");
+                System.out.print("");
             printInOrder(node.getLeftSon());
             System.out.print(node.getValue());
             printInOrder(node.getRightSon());
-            if (isOperator(node.getValue()))
-                System.out.print(")");
         }
     }
     public  String postOrder(Node currentNode, String resultString) {

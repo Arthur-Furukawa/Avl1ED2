@@ -7,9 +7,9 @@ https://www.geeksforgeeks.org/convert-infix-expression-to-postfix-expression/
 https://www.geeksforgeeks.org/program-to-convert-infix-notation-to-expression-tree/
 
 
-Integrantes:
-Arthur Ryuiti Sato Furukawa RA: 10409106
-Felipe Jiao                 RA: 10408852
+Nome:
+Arthur Ryuiti Sato Furukawa
+RA: 10409106
 */
 
 
@@ -34,22 +34,22 @@ public class Main {
 
                 if (section == 1) {
                     try {
-                        System.out.println("Qual o valor da expressao infixa ?: ");
+                        System.out.println("Qual o valor da expressao infixa?: ");
                         String infixExpressionInput = scanner.nextLine().replaceAll("[\\s\\t]+", "");;
                         infixExpression = infixExpressionInput;
 
                     }catch (Exception Exception){
-                        System.out.println("Epa, parece que a expressao inserida é invalida, tente novamente");
+                        System.out.println("Parece que a expressao inserida é invalida, tente novamente");
                     }
                 }
 //                String expression = "0.5*3/0.25";
                 if (section == 2) {
                     try {
                         tree.createExpressionTree(infixExpression);
-                        System.out.println("Arvore de expressão gerada com sucesso");
+                        System.out.println("Arvore de expressao gerada com sucesso");
                         used2option = true;
                     }catch (Exception Exception){
-                        System.out.println("Epa, insira uma expressao valida antes utilizando a opcao 1");
+                        System.out.println("Insira uma expressao valida utilizando a opcao 1");
                     }
                 }
                 if (section == 3) {
@@ -58,20 +58,20 @@ public class Main {
                         tree.printPostOrder();
                         tree.printPreOrder();
                     }else{
-                        System.out.println("Epa,utilize primeiro a opção 2");
+                        System.out.println("Utilize primeiro a opcao 2");
                     }
                 }
                 if (section == 4) {
                     if(used2option == true) {
                         tree.evaluate();
                     }else{
-                        System.out.println("Epa,utilize primeiro a opção 2");
+                        System.out.println("Utilize primeiro a opcao 2");
                     }
                 }
             }
         }catch (Exception exception){
-            System.out.println("Epa algo deu errado ;-; tente novamente!");
+            System.out.println("Algo deu errado!");
         }
-        System.out.println("Obrigado por utilizar nosso Software UwU");
+        System.out.println("Programa Encerrado!");
     }
 }
